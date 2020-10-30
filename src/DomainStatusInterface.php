@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace DarkMatter\Payload;
 
@@ -60,4 +60,11 @@ interface DomainStatusInterface
      * Update succeeded.
      */
     const UPDATED = 'UPDATED';
+
+    /**
+     * Instantiation not allowed.
+     */
+    final private function __construct()
+    {
+    }
 }
